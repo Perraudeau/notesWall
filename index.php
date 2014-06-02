@@ -4,6 +4,11 @@
         <title></title>
     </head>
     <body>
-        test
+        <?php
+        include_once '/model/DBconnectModel.php';
+        foreach (SPDO::getInstance()->query('SELECT * FROM user') as $membre) {
+            echo ($membre[1]);
+        }
+        ?>
     </body>
 </html>

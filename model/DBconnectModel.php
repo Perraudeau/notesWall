@@ -1,8 +1,55 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * @author Perraudeau Victor  <perraudeau.victor@gmail.com>
  */
 
+/**
+ * Create an instance of a secure PDO with Singleton
+ */
+class SPDO {
+
+    private $PDOInstance = null;
+
+    const DEFAULT_SQL_USER = 'root';
+    const DEFAULT_SQL_HOST = 'localhost';
+    const DEFAULT_SQL_PASS = '';
+    const DEFAULT_SQL_DTB = 'notesWall';
+
+    /**
+     * Constructor
+     *
+     * @param void
+     * @return void
+     */
+    public function __construct() {
+        $this->PDOInstance = new PDO('mysql:dbname=' . self::DEFAULT_SQL_DTB . ';host=' . self::DEFAULT_SQL_HOST, self::DEFAULT_SQL_USER, self::DEFAULT_SQL_PASS);
+    }
+
+    /**
+     * Create and return an object SPDO with singleton
+     *
+     * @param void
+     * @return SPDO $instance
+     */
+    public static function getInstance() {
+        static $instance = null;
+        if (null === $instance) {
+            $instance = new static();
+        }
+
+        return $instance;
+    }
+
+    /**
+     * exec a query with pdo
+     *
+     * @param string $query request sql
+     * @return PDOStatement return an object PDOStatement
+     */
+    public function query($query) {
+        return $this->PDOInstance->query($query);
+    }
+
+}
+?>
