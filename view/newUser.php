@@ -27,8 +27,8 @@ session_start();
 				</div>
 			</header>
 			 <center><?php
-                if (isset($_SESSION['error'])){
-                echo $_SESSION['error'];}
+                if (isset($_SESSION['errorCreate'])){
+                echo $_SESSION['errorCreate'];}
                 ?></center><br>
 			<section class="main">
                                 

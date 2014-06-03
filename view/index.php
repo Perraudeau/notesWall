@@ -48,7 +48,6 @@ session_start();
                     <br>
                     <p class="register">
                         <a href="./newUser.php"><button type="button" name="register">  Nouvel utilisateur</button></a>
-
                     </p>
 
                 </form>

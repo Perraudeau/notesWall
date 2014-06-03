@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 /**
  * @author Perraudeau Victor  <perraudeau.victor@gmail.com>
