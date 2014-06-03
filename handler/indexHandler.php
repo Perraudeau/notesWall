@@ -1,33 +1,17 @@
-<HTML>
-<HEAD>
-<TITLE>Test.php3: Affichage des données utilisateur</TITLE>
-</HEAD>
-<BODY>
-
 <?php
-    if ($_POST['entregistrer']=="ok") {
- if (($nom=="")||($prenom=="")||($age=="")){
-  if($nom=="") print("Veuillez saisir le nom de l'utilisateur<BR>\n");
-  if($prenom=="") print("Veuillez saisir le prénom de l'utilisateur<BR>\n");
-  if($age=="") print("Veuillez saisir l'age de l'utilisateur<BR>\n");
+session_start();
+/**
+ * @author Perraudeau Victor  <perraudeau.victor@gmail.com>
+ */
 
- }
- else {
- echo "Récapitulatif des informations saisies<BR>\n
- <UL>
- <LI>Nom: $nom</LI>
- <LI>Prenom: $prenom</LI>
- <LI>Age: $age</LI>
- </UL>
- ";
+$email = $_POST['email'];
+//checkUser($email, sha1($password))
+if (1==2) {
+    $_SESSION['email'] = $_POST['email'] ;
+    
+    header('Location:../view/notesWall.php');
+}else{
 
- }
-}
-else {
- echo "<p>Vous n'avez pas demandé que les informations soient affichées.<p>";
-}
-
-?>
-
-</BODY>
-</HTML>
+   $_SESSION['error'] = "Vous avez indiqué un email ou un mot de passe incorrect. Vérifiez votre email et votre mot de passe et réessayez" ;
+    header('Location:../view/index.php');
+};
