@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
 	<meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
@@ -20,12 +20,12 @@
 			
 				<h1>Notes <strong>Wall</strong></h1>
 				<div class="support-note">
-					<span class="note-ie">Sorry, only modern browsers.</span>
+					<span class="note-ie">Désolé, seulement les navigateurs récents sont acceptés</span>
 				</div>
 			</header>
 			
 			<section class="main">
-				<form class="form-1" >
+				<form class="form-1" Method="POST" Action="../handler/indexHandler.php" >
 					<p class="field">
 						<input type="text" name="login" placeholder="Email">
 						<i class="icon-user icon-large"></i>
@@ -40,7 +40,7 @@
                                         
                                         <br>
                                         <p class="register">
-                                            <button type="button" name="register"><a href="./newUser.php"> Nouvel utilisateur</a></button>
+                                           <a href="./newUser.php"><button type="button" name="register">  Nouvel utilisateur</button></a>
                                         
                                         </p>
                                         
