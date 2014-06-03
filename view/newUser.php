@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -23,13 +26,16 @@
 					<span class="note-ie">Désolé, seulement les navigateurs récents sont acceptés</span>
 				</div>
 			</header>
-			
+			 <center><?php
+                if (isset($_SESSION['error'])){
+                echo $_SESSION['error'];}
+                ?></center><br>
 			<section class="main">
                                 
 				<form class="form-1" Method="POST" Action="../handler/createUserHandler.php" >
                                     <center>Création d'un nouvel utilisateur</center><br>
 					<p class="field">
-						<input type="text" name="login" placeholder="Email">
+						<input type="text" name="email" placeholder="Email">
 						<i class="icon-user icon-large"></i>
 					</p>
 						<p class="field">
