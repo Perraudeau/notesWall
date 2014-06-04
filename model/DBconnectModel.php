@@ -7,7 +7,7 @@
 /**
  * Create an instance of a secure PDO with Singleton
  */
-class SPDO {
+class Spdo {
 
     private $PDOInstance = null;
 
@@ -51,5 +51,15 @@ class SPDO {
         return $this->PDOInstance->query($query);
     }
 
+    /**
+     * exec an exec with pdo
+     *
+     * @param string $query request sql
+     * @return PDOStatement return an object PDOStatement
+     */
+    public function exec($query) {
+        return $this->PDOInstance->exec($query);
+    }
 }
+
 ?>

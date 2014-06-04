@@ -1,5 +1,5 @@
 <?php
-
+include_once '../Model/createUserModel.php';
 session_start();
 /**
  * @author Perraudeau Victor  <perraudeau.victor@gmail.com>
@@ -15,14 +15,12 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
             $_SESSION['errorCreate'] = "Veuillez indiquer un mot de passe de 8 caractères minimum";
             header('Location:../view/newUser.php');
         } else {
-            if (1 == 2) {
-                $_SESSION['email'] = $_POST['email'];
-
-                header('Location:../view/notesWall.php');
-            } else {
-
-                $_SESSION['errorCreate'] = "Vous avez indiqué un email ou un mot de passe incorrect. Vérifiez votre email et votre mot de passe et réessayez";
+            if (createUserModel::checkNewEmail($email)) {
+                $_SESSION['errorCreate'] = "L'email existe déjà";
                 header('Location:../view/newUser.php');
+            } else {
+                createUserModel::insertNewUser($email,$_POST['password']);
+                header('Location:../view/notesWall.php');
             }
         }
     };

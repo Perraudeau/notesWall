@@ -1,22 +1,21 @@
 <?php
+include_once '../Model/indexModel.php';
 session_start();
 /**
  * @author Perraudeau Victor  <perraudeau.victor@gmail.com>
  */
 if (!empty($_POST['email']) && !empty($_POST['password'])) {
-    $email = $_POST['email'];
-//checkUser($email, sha1($password))
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+   
+    if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
         $_SESSION['error'] = "Veuillez indiquer un email valide";
         header('Location:../view/index.php');
     } else {
         if (strlen($_POST['password']) < 8) {
             $_SESSION['error'] = "Veuillez indiquer un mot de passe de 8 caractères minimum";
-            header('Location:../view/newUser.php');
+            header('Location:../view/index.php');
         } else {
-            if (1 == 2) {
+            if (IndexModel::checkUser($_POST['email'], sha1($_POST['password']))) {
                 $_SESSION['email'] = $_POST['email'];
-
                 header('Location:../view/notesWall.php');
             } else {
 
