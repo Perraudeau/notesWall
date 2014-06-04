@@ -11,47 +11,57 @@ session_start();
 
 
         <meta name="author" content="Perraudeau Victor & Leroux Alexis" />
-        <link rel="shortcut icon" href="../favicon.ico"> 
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link href="./css/style.css" rel="stylesheet">
+        <link href="./css/metro-bootstrap.css" rel="stylesheet">
         <script src="js/modernizr.custom.63321.js"></script>
                 <!--[if lte IE 7]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
     </head>
-    <body>
-        <div class="container">
+    <body class="metro">
+        <header class="bg-dark" data-load="header.html"></header>
+        <br><br><br><br>
+        <h1 align="center">Notes <strong>Wall</strong></h1>
+    </header>
+    <br>
+<center><?php
+    if (isset($_SESSION['error'])) {
+        echo $_SESSION['error'];
+    }
+    ?></center><br>
+<div class="example">
+    <form Method="POST" Action="../handler/indexHandler.php" >
+        <fieldset>
+            <label>Email :</label>
+            <div class="input-control text" data-role="input-control">
+                <input type="email" placeholder="type text" required="required">
+                <button class="btn-clear" tabindex="-1"></button>
+            </div>
+            <label>Mot de passe :</label>
+            <div class="input-control password" data-role="input-control">
+                <input type="password" placeholder="type password" autofocus required="required">
+                <button class="btn-reveal" tabindex="-1"></button>
+            </div>
 
-            <header>
+           
 
-                <h1>Notes <strong>Wall</strong></h1>
-                <div class="support-note">
-                    <span class="note-ie">Désolé, seulement les navigateurs récents sont acceptés</span>
-                </div>
-            </header>
-            <center><?php
-                if (isset($_SESSION['error'])){
-                echo $_SESSION['error'];}
-                ?></center><br>
-            <section class="main">
-                <form class="form-1" Method="POST" Action="../handler/indexHandler.php" >
-                    <p class="field">
-                        <input type="text" name="email" placeholder="Email">
-                        <i class="icon-user icon-large"></i>
-                    </p>
-                    <p class="field">
-                        <input type="password" name="password" placeholder="Password">
-                        <i class="icon-lock icon-large"></i>
-                    </p>
-                    <p class="submit">
-                        <button type="submit"><i class="icon-arrow-right icon-large"></i></button>
-                    </p>
+            <div align="center">
+                <input type="submit" value="Valider" >   
+                <input type="reset" value="Reset">
+            </div>
 
-                    <br>
-                    <p class="register">
-                        <a href="./newUser.php"><button type="button" name="register">  Nouvel utilisateur</button></a>
-                    </p>
 
-                </form>
 
-            </section>
-        </div>
-    </body>
+        </fieldset>
+    </form>
+
+
+<br>
+<p class="register">
+    <button type="button" name="register">  Nouvel utilisateur</button></a>
+</p>
+
+
+
+
+</div>
+</body>
 </html>
