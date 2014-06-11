@@ -7,7 +7,10 @@ body {
 html,
 body {
   padding: 0;
-  background-color: #333333;
+  background-image: url('../images/fonts.jpg');
+  background-position:top;
+background-attachment:scroll;
+background-repeat:no-repeat;
   height: 100%;
 }
 html,

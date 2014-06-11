@@ -1,34 +1,30 @@
+h2{
+    color: white;
+}
 
-.metro input[type="button"],
 .metro input[type="submit"],
-.metro input[type="reset"] {
+.metro input[type="reset"]{
+    font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
     text-align: center;
-    padding: 20px;
-    margin:40px,0;
-    cursor: pointer;
-    outline: none;
-    font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
-    width:500px;
-    height:500px;
-    background: #00CCFF;
-    font:bold 17px Arial;
-    border-radius:50%;
-    border:none;
-    color:#fff;
+    padding: 10px;
+    margin: 15px 0px 0px 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    background: background;
+    color: #FFF;
+    border: 0px none;
+    outline: 0px none;
     transition: background 1s;
     -webkit-transition: box-shadow 1s;
 }
 
-
-
-
 .metro input[type="button"]:hover,
 .metro input[type="submit"]:hover,
 .metro input[type="reset"]:hover {
-
     text-shadow: 0px 3px 0px rgba( 0, 0, 0, 0.35);
     border-color: transparent;
-
     box-shadow: 0px 2px 1px white inset, 0px -2px 20px white, 0px 2px 5px
         rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
     -webkit-transition: box-shadow 0.8s;
@@ -36,8 +32,10 @@
 }
 
 
+.metro input[type="button"]:active{
+      background: #F6A953;
+}
 
-.metro input[type="button"]:active,
 .metro input[type="submit"]:active,
 .metro input[type="reset"]:active {
     background-color: #e51400;
