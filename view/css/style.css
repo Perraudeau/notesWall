@@ -8,61 +8,42 @@ h2{
     color: rgb(255, 255, 255);
     text-decoration: none;
     text-align: center;
-    padding: 10px;
-    margin: 15px 0px 0px 15px;
-    font-size: 18px;
+    padding: 7px;
+    margin: 20px 5px 5px 20px;
+    font-size: 16px;
     text-transform: uppercase;
-    background: background;
+    background: #404040;
     color: #FFF;
-    border: 0px none;
-    outline: 0px none;
-    transition: background 1s;
-    -webkit-transition: box-shadow 1s;
+     border: 2px solid #F0F0F0;
+    transition: all 0.5s;
+
 }
 
 .metro input[type="button"]:hover,
 .metro input[type="submit"]:hover,
 .metro input[type="reset"]:hover {
-    text-shadow: 0px 3px 0px rgba( 0, 0, 0, 0.35);
-    border-color: transparent;
-    box-shadow: 0px 2px 1px white inset, 0px -2px 20px white, 0px 2px 5px
-        rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
-    -webkit-transition: box-shadow 0.8s;
-    transition: background 1s;
+    
+   
+    transition: all 0.5s;
+    background:#1e7cc4;
+    cursor:pointer;
 }
 
 
-.metro input[type="button"]:active{
-      background: #F6A953;
-}
 
-.metro input[type="submit"]:active,
-.metro input[type="reset"]:active {
-    background-color: #e51400;
-    color: #ffffff !important;
-    border-color: transparent;
-    -webkit-transition: box-shadow 0.8s;
-    -webkit-transition: background 1s;
-}
 
-.metro input[type="submit"]:active{
-    background-color: lime;
-    color: #fff !important;
-    -webkit-transition: box-shadow 0.8s;
-    border-color: transparent;
-    transition: background 1s;
- 
-}
+
 .metro .example {
     padding: 20px 40px 20px 60px;
     width: 400px;
     margin: 20px auto;
+    color:white;
     border: 1px #ccc solid;
     position: relative;
-    background-color: #A80404 !important;
+    background-color: #404040 !important;
     min-height: 100px;
     font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
-    font:bold 17px Arial;
+    font:bold 17px Arial ;
 
 }
 .metro .example:before,

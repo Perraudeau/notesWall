@@ -43,22 +43,27 @@ session_start();
     <form Method="POST" Action="../handler/indexHandler.php" >
         <fieldset>
             <div>
+                <label>Email :</label>
                 <div class="input-control text" data-role="input-control">
+                    
                     <input type="email" name="email" placeholder="Email" required="required">
                     <button class="btn-clear" tabindex="-1"></button>
                 </div>
+                <label>Mot de passe :</label>
                 <div class="input-control password" data-role="input-control">
-                    <input type="password" name="password" placeholder="Password" autofocus required="required">
+                    
+                    <input type="password" name="password" placeholder="Mot de passe" autofocus required="required" >
                     <button class="btn-reveal" tabindex="-1"></button>
                 </div>
-                <p align="right">
-                    <input type="submit" value="Valider" ></p> 
+                <br>
+                <p class="register" align="center">
+                    <a href="./newUser.php">Nouvel utilisateur</a>
+                    <input type="submit" value="Valider" align="right" >
+                </p> 
             </div>
         </fieldset>
     </form>
-    <p class="register" align="center">
-        <a href="./newUser.php">Nouvel utilisateur</a>
-    </p>
+
 </div>
 
 </body>
