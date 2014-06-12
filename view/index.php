@@ -46,13 +46,13 @@ session_start();
                 <label>Email :</label>
                 <div class="input-control text" data-role="input-control">
                     
-                    <input type="email" name="email" placeholder="Email" required="required">
+                    <input type="email" name="email" required="required">
                     <button class="btn-clear" tabindex="-1"></button>
                 </div>
                 <label>Mot de passe :</label>
                 <div class="input-control password" data-role="input-control">
                     
-                    <input type="password" name="password" placeholder="Mot de passe" autofocus required="required" >
+                    <input type="password" name="password" autofocus required="required" >
                     <button class="btn-reveal" tabindex="-1"></button>
                 </div>
                 <br>
