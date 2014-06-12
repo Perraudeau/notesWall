@@ -30,35 +30,50 @@ session_start();
     </head>
     <body>
         <div class="metro">
-				
-			<header>
-                                <br><br><br><br>
-				<h1 align="center">Notes <strong>Wall</strong></h1>
-			</header>
-			 <center><?php
-                if (isset($_SESSION['errorCreate'])){
-                echo $_SESSION['errorCreate'];}
+
+            <header>
+                <br><br><br><br>
+                <h1 align="center">Notes <strong>Wall</strong></h1>
+            </header>
+            <center><?php
+                if (isset($_SESSION['errorCreate'])) {
+                    echo $_SESSION['errorCreate'];
+                }
                 ?></center><br>
-			<div class="example">
-                                
-				<form class="form-1" Method="POST" Action="../handler/createUserHandler.php" >
-                                    <center>Création d'un nouvel utilisateur</center><br>
-					<p class="field">
-						<input type="text" name="email" placeholder="Email">
-						<i class="icon-user icon-large"></i>
-					</p>
-						<p class="field">
-							<input type="password" name="password" placeholder="Password">
-							<i class="icon-lock icon-large"></i>
-					</p>
-					<p class="submit">
-						<button type="submit" name="submit"><i class="icon-arrow-right icon-large"></i></button>
-					</p>
-                                        
-                                        <br>                                              
-				</form>
-             
-			</div>
+            <div class="example">
+
+                <form class="form-1" Method="POST" Action="../handler/createUserHandler.php" >
+                    <fieldset>
+                        <div>
+                            <label>Email :</label>
+                            <div class="input-control text" data-role="input-control">
+
+                                <input type="email" name="email" required="required">
+                                <button class="btn-clear" tabindex="-1"></button>
+                            </div>
+                            <label>Mot de passe :</label>
+                            <div class="input-control password" data-role="input-control">
+
+                                <input type="password" name="password" autofocus required="required" >
+                                <button class="btn-reveal" tabindex="-1"></button>
+                            </div>
+                            <label>Confirmation du mot de passe :</label>
+                            <div class="input-control password" data-role="input-control">
+
+                                <input type="password" name="password2" autofocus required="required" >
+                                <button class="btn-reveal" tabindex="-1"></button>
+                            </div>
+                            <br>
+                            <p class="register" align="center">
+                                <a href="/notesWall/view/"><input type="button" value="Retour"></a>
+                                <input type="submit" value="Valider">
+
+                            </p>
+                        </div>
+                    </fieldset>                          
+                </form>
+
+            </div>
         </div>
     </body>
 </html>
