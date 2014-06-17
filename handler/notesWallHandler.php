@@ -36,14 +36,16 @@ class notesWall {
 
             </head>
             <body>
+                
                 <div id="notesWall">
+                    <img  align="right" src="../view/images/favicon.png">
                     <div id="header">  <ul id="onglets">
                             <li class="active"><a href="../view/notesWall.php"> Accueil </a></li>
                             <li ><a href="../view/newNote.php"> Ajouter une note </a></li>
                             <li><a href="../view/params.php"> Paramètres </a></li>
                             <li><a href="../handler/disconnect.php"> Deconnexion </a></li>
-                            
                         </ul></div>
+                    <br><br><br>
                     <?php 
                 }
 
@@ -60,13 +62,14 @@ class notesWall {
                 public static function container() {
                     ?>
                     
-                    <div id="container"><div id="message">Votre message a bien été envoyé</div><?php echo $_SESSION['email'] ?></div>
+                    <div id="container">Accueil</div>
                     <?php
                 }
 
                 //bas de page
                 public static function footer() {
                     ?>
+                    <div align="center"> © Perraudeau & Leroux</div><br>
                 </div>
             </body>
         </html>
