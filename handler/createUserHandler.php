@@ -21,6 +21,7 @@ if ($_POST['password'] == $_POST['password2']) {
                     $_SESSION['errorCreate'] = "L'email existe déjà";
                     header('Location:../view/newUser.php');
                 } else {
+                    $_SESSION['email'] = $email;
                     createUserModel::insertNewUser($email, $_POST['password']);
                     header('Location:../view/notesWall.php');
                 }

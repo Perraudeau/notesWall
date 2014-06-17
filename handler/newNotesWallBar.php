@@ -1,10 +1,11 @@
 <?php
 
+include_once '../Model/createNoteModel.php';
+session_start();
 
 /**
  *
  * @author Perraudeau
  */
-class newNotesWallBar {
-    //put your code here
-}
+createNoteModel::insertNewNote($_SESSION['email'], $_POST['note']);
+header('Location:../view/notesWall.php');

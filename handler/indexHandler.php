@@ -18,7 +18,6 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
                 $_SESSION['email'] = $_POST['email'];
                 header('Location:../view/notesWall.php');
             } else {
-
                 $_SESSION['error'] = "Vous avez indiqué un email ou un mot de passe incorrect. Vérifiez votre email et votre mot de passe et réessayez";
                 header('Location:../view/index.php');
             }
