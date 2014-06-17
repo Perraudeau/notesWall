@@ -135,7 +135,6 @@ h2{
 }
 #container {
     background: #FFFFFF;
-    height: 100%;
 }
 #newNotesWallBar{
     font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
@@ -209,4 +208,10 @@ input[type="submit"]{
     transition: all 0.5s;
     background:#1e7cc4;
     cursor:pointer;
+}
+#note {
+  list-style-type : none;
+  border: 1px solid #404040;
+  margin-left: 10%;
+  margin-right: 10%;
 }

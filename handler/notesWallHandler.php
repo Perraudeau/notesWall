@@ -4,6 +4,7 @@
  *
  * @author Perraudeau
  */
+include_once '../handler/notesWallContainer.php';
 class notesWall {
 
     //Menu du haut
@@ -60,10 +61,7 @@ class notesWall {
 
                 //affichage des notes
                 public static function container() {
-                    ?>
-                    
-                    <div id="container">Accueil</div>
-                    <?php
+                    notesWallContainer::container();
                 }
 
                 //bas de page

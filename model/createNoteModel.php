@@ -9,7 +9,7 @@ include_once 'DBconnectModel.php';
 class createNoteModel {
 
     public static function insertNewNote($email, $note) {
-        $query = 'INSERT INTO note (id,idUser,title,text,creationDate,place,alarmDate,color) VALUES (NULL , ' . createNoteModel::getIdUser($email) . ',"Note rapide","' . $note . '",CURRENT_TIMESTAMP,"Ici",CURRENT_TIMESTAMP,"#AAAAAA")';
+        $query = 'INSERT INTO note (id,idUser,title,text,creationDate,place,alarmDate,color) VALUES (NULL , ' . createNoteModel::getIdUser($email) . ',"Note rapide","' . $note . '",CURRENT_TIMESTAMP,"Ici",CURRENT_TIMESTAMP,"#FFFFFF")';
         echo $query;
         SPDO::getInstance()->exec($query);
     }
