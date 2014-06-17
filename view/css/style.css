@@ -14,7 +14,7 @@ h2{
     text-transform: uppercase;
     background: #404040;
     color: #FFF;
-     border: 2px solid #F0F0F0;
+    border: 2px solid #F0F0F0;
     transition: all 0.5s;
 
 }
@@ -22,8 +22,8 @@ h2{
 .metro input[type="button"]:hover,
 .metro input[type="submit"]:hover,
 .metro input[type="reset"]:hover {
-    
-   
+
+
     transition: all 0.5s;
     background:#1e7cc4;
     cursor:pointer;
@@ -123,4 +123,90 @@ h2{
     padding: 0;
     margin: 0;
     display: none;
+}
+#notesWall {
+    margin-left: 25%;
+    margin-right: 25%;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+}
+#header {
+    background: #FFFFFF;
+}
+#container {
+    background: #FFFFFF;
+    height: 100%;
+}
+#newNotesWallBar{
+    font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 16px;
+    background: #404040;
+    color: #FFF;
+
+
+}
+#newNotesWallBar div{
+    margin-left: 5px;
+    height: 44px;
+}
+#newNotesWallBar input[type="text"]{
+    width: 85%;
+    margin-top: 2px;
+    height: 36px;
+}
+#onglets
+{
+    font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+    list-style-type : none;
+    padding-bottom : 24px;
+    border-bottom : 1px solid #9EA0A1;
+    margin-left : 0;
+}
+#onglets li
+{
+    float : left;
+    width: 20%;
+    background-color: #F4F9FD;
+    border : 1px solid #9EA0A1;
+}
+#onglets li.active
+{
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
+}
+#onglets a
+{
+    display : block;
+    color : #666;
+    text-decoration : none;
+    padding : 4px;
+}
+#onglets a:hover
+{
+    background: #404040;
+    color: rgb(255, 255, 255);
+}
+
+input[type="submit"]{
+    font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    padding: 6px;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: #404040;
+    color: #FFF;
+    border: 2px solid #404040;
+    transition: all 0.5s;
+
+
+}
+
+#newNotesWallBar  input[type="submit"]:hover {
+    transition: all 0.5s;
+    background:#1e7cc4;
+    cursor:pointer;
 }
