@@ -1,16 +1,15 @@
 <?php
-
 /**
  *
  * @author Perraudeau
  */
 include_once '../handler/notesWallContainer.php';
+
 class notesWall {
 
     //Menu du haut
     public static function headerNotesWall() {
-        ?>
-        <html lang="fr">
+        ?><html>
             <head>
                 <meta charset="UTF-8" />
                 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
@@ -23,13 +22,13 @@ class notesWall {
                 <link href="./css/metro-bootstrap.css" rel="stylesheet">
                 <!-- Load JavaScript Libraries -->
                 <link rel="stylesheet" type="text/css" href="./css/DateTimePicker.css" />
-	
+
                 <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
                 <script type="text/javascript" src="./js/DateTimePicker.js"></script>
+                <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 
             </head>
             <body>
-                
                 <div id="notesWall">
                     <img  align="right" src="../view/images/favicon.png">
                     <div id="header">  <ul id="onglets">
@@ -39,7 +38,7 @@ class notesWall {
                             <li><a href="../handler/disconnect.php"> Deconnexion </a></li>
                         </ul></div>
                     <br><br><br>
-                    <?php 
+                    <?php
                 }
 
                 //barre pour permettre la creation d'une note rapide
@@ -58,7 +57,26 @@ class notesWall {
 
                 //bas de page
                 public static function footer() {
+                    
+                    //Permet de rafraichir la page principal 
                     ?>
+                    <script type='text/javascript'>
+                        function refreshContainer() {
+                            var container = document.getElementById("container");
+                            var content = container.innerHTML;
+                            container.innerHTML= content;
+                            $.ajax({
+                                type: "GET",
+                                url: "../view/notesWall.php",
+                                dataType: 'html',
+                                success:function(data) {
+                                   $("#container").load('../view/notesWallAjax.php');					
+                                    
+                                }
+                            });
+                        }
+                        setInterval("refreshContainer()", 10000);
+                    </script>
                     <div align="center"> © Perraudeau & Leroux</div><br>
                 </div>
             </body>

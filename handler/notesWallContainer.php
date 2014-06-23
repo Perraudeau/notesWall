@@ -17,7 +17,7 @@ class notesWallContainer {
             echo $_SESSION['paramsOk'];
             $_SESSION['paramsOk']="";
             for ($index = 0; $index < count($result); $index++) { ?>
-            <div id="note" style="background:<?php echo $result[$index]['color'] ?>;">
+            <div id="note" onmouseover= style="background:<?php echo $result[$index]['color'] ?>">
                 <li align="center"><h1><?php echo $result[$index]['title'] ?></h1></li>
                 <li align="center"><?php echo noteWallModel::getEmailUser($result[$index]['idUser']) ?></li><br>
                 <li align="justify"><?php echo $result[$index]['text'] ?></li><br><br>
