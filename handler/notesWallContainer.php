@@ -12,7 +12,11 @@ class notesWallContainer {
         $result = noteWallModel::getNotes();
         ?>
         <div id="container">
-            <?php for ($index = 0; $index < count($result); $index++) { ?>
+            
+            <?php 
+            echo $_SESSION['paramsOk'];
+            $_SESSION['paramsOk']="";
+            for ($index = 0; $index < count($result); $index++) { ?>
             <div id="note" style="background:<?php echo $result[$index]['color'] ?>;">
                 <li align="center"><?php echo $result[$index]['title'] ?></li>
                 <li><?php echo noteWallModel::getEmailUser($result[$index]['idUser']) ?></li>
