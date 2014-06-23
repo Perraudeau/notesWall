@@ -214,4 +214,73 @@ input[type="submit"]{
   border: 1px solid #404040;
   margin-left: 10%;
   margin-right: 10%;
+  transition:background 0.5s;
+}
+#note:hover{
+    background: #1e7cc4;
+    color:#fff;
+    cursor: pointer;
+}
+input[type="button"].BtnBleu{
+    font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    padding: 40px;
+    margin-left:20px;
+    font-size: 10px;
+    text-transform: uppercase;
+    background: #A2DEFF;
+    color: #FFF;
+    border: 2px solid;
+    transition: all 0.5s;
+}
+
+input[type="button"].BtnJaune{
+    font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    padding: 40px;
+    margin-left:20px;
+    font-size: 10px;
+    text-transform: uppercase;
+    background: #CCCA34;
+    color: #FFF;
+    border: 2px solid ;
+    transition: all 0.5s;
+}
+
+input[type="button"].BtnRose{
+    font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    padding: 40px;
+    margin-left:20px;
+    font-size: 10px;
+    text-transform: uppercase;
+    background: #CBA0CC;
+    color: #FFF;
+    border: 2px solid ; 
+    transition: all 0.5s;
+}
+
+input[type="button"].BtnBleu:hover{
+    cursor:pointer;
+ 
+}
+
+input[type="button"].BtnJaune:hover{
+    cursor:pointer;
+
+}
+
+input[type="button"].BtnRose:hover{
+    cursor:pointer;
+
+}
+
+textarea { 
+    resize: none; 
 }
