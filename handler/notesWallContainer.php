@@ -18,12 +18,11 @@ class notesWallContainer {
             $_SESSION['paramsOk']="";
             for ($index = 0; $index < count($result); $index++) { ?>
             <div id="note" style="background:<?php echo $result[$index]['color'] ?>;">
-                <li align="center"><?php echo $result[$index]['title'] ?></li>
-                <li><?php echo noteWallModel::getEmailUser($result[$index]['idUser']) ?></li>
-                <li><?php echo $result[$index]['text'] ?></li>
-                <li><?php echo $result[$index]['creationDate'] ?></li>
-                <li><?php echo $result[$index]['place'] ?></li>
-                <li><?php echo $result[$index]['alarmDate'] ?></li>
+                <li align="center"><h1><?php echo $result[$index]['title'] ?></h1></li>
+                <li align="center"><?php echo noteWallModel::getEmailUser($result[$index]['idUser']) ?></li><br>
+                <li align="justify"><?php echo $result[$index]['text'] ?></li><br><br>
+                <li><?php echo $result[$index]['alarmDate']?></li>
+                <li align="right"><?php echo $result[$index]['place'] ?></li>
                 </div>
                 <br>
                 <?php } ?>
