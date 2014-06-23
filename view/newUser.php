@@ -38,6 +38,7 @@ session_start();
             <center><?php
                 if (isset($_SESSION['errorCreate'])) {
                     echo $_SESSION['errorCreate'];
+                    $_SESSION['errorCreate']="";
                 }
                 ?></center><br>
             <div class="example">
