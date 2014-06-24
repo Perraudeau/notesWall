@@ -49,7 +49,7 @@ class notesWall {
 
                 <div id="notesWall">
                     <img  align="right" src="../view/images/favicon.png">
-                    <div id="header">  <ul id="onglets">
+                    <div id="onglets">  <ul id="onglets">
                             <li class="active"><a href="../view/notesWall.php"> Accueil </a></li>
                             <li ><a href="../view/newNote.php"> Ajouter une note </a></li>
                             <li><a href="../view/params.php"> Paramètres </a></li>

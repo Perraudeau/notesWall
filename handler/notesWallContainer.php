@@ -30,6 +30,7 @@ class notesWallContainer {
             setInterval("refreshContainer()", 10000);
         </script>
         <div id="container">
+            <br>
 
             <?php
             echo $_SESSION['paramsOk'];
@@ -39,9 +40,9 @@ class notesWallContainer {
                 <div id="note" style="background:<?php echo $result[$index]['color'] ?>">
                     <li align="center"><h1><?php echo $result[$index]['title'] ?></h1></li>
                     <li align="center"><?php echo noteWallModel::getEmailUser($result[$index]['idUser']) ?></li><br>
-                    <li align="justify"><?php echo $result[$index]['text'] ?></li><br><br>
-                    <li><?php echo notesWallContainer::UsTofr($result[$index]['alarmDate']) ?></li>
-                    <li align="right"><?php echo $result[$index]['place'] ?></li>
+                    <li class="textNote" align="justify"><?php echo $result[$index]['text'] ?></li><br><br>
+                    <li class="alarm"><?php echo notesWallContainer::UsTofr($result[$index]['alarmDate']) ?></li>
+                    <li class="place" align="right"><?php echo $result[$index]['place'] ?></li>
                 </div>
                 <br>
             <?php } ?>
