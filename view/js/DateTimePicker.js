@@ -25,7 +25,7 @@
 		
 			dateTimeFormat: "dd/MM/yyyy HH:mm:ss",
 			dateFormat: "dd/MM/yyyy",
-			timeFormat: "HH:mm:ss",
+			timeFormat: "HH:mm",
 		
 			maxDate: null,
 			minDate:  null,
