@@ -18,7 +18,6 @@ h2{
     transition: all 0.5s;
 
 }
-
 .metro input[type="button"]:hover,
 .metro input[type="submit"]:hover,
 .metro input[type="reset"]:hover {
