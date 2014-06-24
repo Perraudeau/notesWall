@@ -25,25 +25,6 @@ class notesWall {
                 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"></script>
                 <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
                 <script type="text/javascript" src="./js/DateTimePicker.js"></script>
-
-
-                <!--Ajax part-->
-                <script type="text/javascript">
-                    $(document).ready(function() {
-                        $("#validateNewNoteButton").click(function() {
-                            var note = $("note").val();
-                            var data = {note: note};
-                            $.post("../handler/newNotesWallBar.php",
-                                    data,
-                                    function success(data) {
-                                        $("#container").empty().hide();
-                                        $("#container").append(data);
-                                    });
-                        });
-                    })
-
-                </script>
-
             </head>
             <body>
 
