@@ -9,8 +9,7 @@ class notesWall {
 
     //Menu du haut
     public static function headerNotesWall() {
-        ?>
-        <html lang="fr">
+        ?><html>
             <head>
                 <meta charset="UTF-8" />
                 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
@@ -26,6 +25,7 @@ class notesWall {
                 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"></script>
                 <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
                 <script type="text/javascript" src="./js/DateTimePicker.js"></script>
+
 
                 <!--Ajax part-->
                 <script type="text/javascript">

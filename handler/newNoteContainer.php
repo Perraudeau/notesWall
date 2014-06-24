@@ -19,7 +19,7 @@ class newNotesContainer {
 
                             <div class="text" data-role="input-control">
 
-                                <input type="text" name="titre" required="required" size="106" placeholder="Votre titre ici">
+                                <input type="text" name="title" required="required" size="106" placeholder="Votre titre ici">
 
                             </div>
 
@@ -27,7 +27,7 @@ class newNotesContainer {
                                 <textarea  name="note" placeholder="Votre note ici" required="required" maxlength ="480" rows="7" cols="81" ></textarea>
                             </div>
                             <div>
-                                <input type="text" placeholder="date d'alarme" data-field="datetime" readonly>
+                                <input type="text" name ="date" size ="106" placeholder="date d'alarme" data-field="datetime" readonly>
 
                                 <div id="dtBox"></div>
 
@@ -40,7 +40,16 @@ class newNotesContainer {
 
                                 </script>
                             </div>
-                            <br>
+                       
+                            <div class="text" data-role="input-control">
+                                <input type="text" name="place" required="required" size="106" placeholder="Votre lieu ici">
+                            </div>
+                            <div>
+                                <input type="button" class="BtnJaune" name="color" value="#CCCA34">
+                                <input type="button" class="BtnRose" name="color" value="#CBA0CC">
+                                <input type="button" class="BtnBleu" name="color" value="#A2DEFF">
+                                <input type="hidden" name="color" value="#CCCA34">
+                            </div>
                             <p class="register" align="center">
                                 <input type="submit" value="Valider" align="right" >
                             </p> 
