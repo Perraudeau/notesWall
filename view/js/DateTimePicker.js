@@ -144,7 +144,7 @@
 				dtPickerObj.dataObject.sArrInputDateFormats.push(sDate);
 			
 				// "dd-MMM-yyyy"
-				sDate = "dd" + dtPickerObj.settings.dateSeparator + "MMM" + dtPickerObj.settings.dateSeparator + "yyyy";
+				sDate = "dd" + dtPickerObj.settings.dateSeparator + "MM" + dtPickerObj.settings.dateSeparator + "yyyy";
 				dtPickerObj.dataObject.sArrInputDateFormats.push(sDate);
 			},
 		

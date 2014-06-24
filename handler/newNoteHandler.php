@@ -8,5 +8,7 @@ $date=$_POST['date'];
 $place=$_POST['place'];
 $color=$_POST['color'];
 $email=$_SESSION['email'];
-//createNoteModel:__construct($date);
+
+
+var_dump($email);
 createNoteModel::insertNewBigNote($email, $title, $note, $date, $place, $color);

@@ -22,10 +22,10 @@ class notesWall {
                 <link href="./css/metro-bootstrap.css" rel="stylesheet">
                 <!-- Load JavaScript Libraries -->
                 <link rel="stylesheet" type="text/css" href="./css/DateTimePicker.css" />
-
+                <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
                 <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
                 <script type="text/javascript" src="./js/DateTimePicker.js"></script>
-                <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+               
 
             </head>
             <body>
@@ -60,7 +60,7 @@ class notesWall {
                     
                     //Permet de rafraichir la page principal 
                     ?>
-                    <script type='text/javascript'>
+                   <script type='text/javascript'>
                         function refreshContainer() {
                             var container = document.getElementById("container");
                             var content = container.innerHTML;

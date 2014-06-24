@@ -210,15 +210,20 @@ input[type="submit"]:hover {
     cursor:pointer;
 }
 #note {
-  list-style-type : none;
-  border: 1px solid #404040;
-  margin-left: 10%;
-  margin-right: 10%;
-  transition:background 0.5s;
+    list-style-type : none;
+    border: 1px solid #404040;
+    margin-left: 10%;
+    margin-right: 10%;
+    transition:all 0.5s;
 }
 #note:hover{
-    color:#fff;
-    background-color: #1e7cc4;
+    -moz-box-shadow: 3px 3px 3px 3px #1e7cc4;
+    -webkit-box-shadow: 3px 3px 3px 3px #1e7cc4;
+    -o-box-shadow: 3px 3px 3px 3px #1e7cc4;
+    box-shadow: 2px 2px 4px 4px #1e7cc4;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
     cursor: pointer;
 }
 input[type="button"].BtnBleu{
@@ -268,7 +273,7 @@ input[type="button"].BtnRose{
 
 input[type="button"].BtnBleu:hover{
     cursor:pointer;
- 
+
 }
 
 input[type="button"].BtnJaune:hover{
