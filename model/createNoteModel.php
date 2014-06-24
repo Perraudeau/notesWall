@@ -10,6 +10,7 @@ class createNoteModel {
 
     public static function insertNewNote($email, $note) {
         $query = 'INSERT INTO note (id,idUser,title,text,creationDate,place,alarmDate,color) VALUES (NULL , ' . createNoteModel::getIdUser($email) . ',"Note rapide","' . $note . '",CURRENT_TIMESTAMP,"",CURRENT_TIMESTAMP,"#FFFFFF")';
+        echo $query;
         SPDO::getInstance()->exec($query);
     }
 
@@ -27,7 +28,7 @@ class createNoteModel {
 
     public static function insertNewBigNote($email,$title,$note,$date,$place,$color){
  
-        $query = 'INSERT INTO note (id,idUser,title,text,creationDate,place,alarmDate,color) VALUES (NULL , ' . createNoteModel::getIdUser($email) . ',"'.$title.'","' . $note . '",CURRENT_TIMESTAMP,"'.$place.'",TIMESTAMP("'.$date.'"),"'.$color.'")';
+        $query = 'INSERT INTO note (id,idUser,title,text,creationDate,place,alarmDate,color) VALUES (NULL , ' . createNoteModel::getIdUser($email) . ',"'.$title.'","' . $note . '",CURRENT_TIMESTAMP,"'.$place.'","'.$date.'","'.$color.'")';
         echo $query;
         SPDO::getInstance()->exec($query);
         
