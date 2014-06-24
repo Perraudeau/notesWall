@@ -297,7 +297,7 @@ input[type=radio]#BtnJaune + label{
 
 input[type=radio]#BtnBlanc + label{ 
    background-image: none;
-   
+   color:black;
    background-color:#FFFFFF;
    cursor:pointer;
     padding: 40px;
@@ -305,17 +305,18 @@ input[type=radio]#BtnBlanc + label{
 }
 
 
-input[type=radio]#BtnBleu:checked + label{ 
+input[type=radio]#BtnBlanc:checked + label{ 
    background-image: none;
-   background-color:#A2DEFF;
+   background-color:#FFFFFF;
+
    cursor:pointer;
     padding: 40px;
     margin-left:20px;
 
-    -moz-box-shadow: 3px 3px 3px 3px #1e7cc4;
-    -webkit-box-shadow: 3px 3px 3px 3px #1e7cc4;
-    -o-box-shadow: 3px 3px 3px 3px #1e7cc4;
-    box-shadow: 2px 2px 4px 4px #1e7cc4;
+    -moz-box-shadow: 3px 3px 3px 3px gray;
+    -webkit-box-shadow: 3px 3px 3px 3px gray;
+    -o-box-shadow: 3px 3px 3px 3px gray;
+    box-shadow: 2px 2px 4px 4px gray;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px; 
@@ -328,10 +329,10 @@ input[type=radio]#BtnRouge:checked + label{
     padding: 40px;
     margin-left:20px;
 
-    -moz-box-shadow: 3px 3px 3px 3px #EA6F64;
-    -webkit-box-shadow: 3px 3px 3px 3px #EA6F64;
-    -o-box-shadow: 3px 3px 3px 3px #EA6F64;
-    box-shadow: 2px 2px 4px 4px #EA6F64;
+    -moz-box-shadow: 3px 3px 3px 3px #E76F64;
+    -webkit-box-shadow: 3px 3px 3px 3px #E76F64;
+    -o-box-shadow: 3px 3px 3px 3px #E76F64;
+    box-shadow: 2px 2px 4px 4px #E76F64;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px; 
@@ -339,11 +340,10 @@ input[type=radio]#BtnRouge:checked + label{
 
 input[type=radio]#BtnRose:checked + label{ 
    background-image: none;
-   background-color:#CBA0CC;
+   background-color:#C97EA6;
    cursor:pointer;
     padding: 40px;
     margin-left:20px;
-    
         -moz-box-shadow: 3px 3px 3px 3px #CBA0CC;
     -webkit-box-shadow: 3px 3px 3px 3px #CBA0CC;
     -o-box-shadow: 3px 3px 3px 3px #CBA0CC;
@@ -355,7 +355,7 @@ input[type=radio]#BtnRose:checked + label{
 
 input[type=radio]#BtnBleu:checked + label{ 
    background-image: none;
-   background-color:#A2DEFF;
+   background-color:#7ACAD1;
    cursor:pointer;
     padding: 40px;
     margin-left:20px;
@@ -370,7 +370,7 @@ input[type=radio]#BtnBleu:checked + label{
 }
 input[type=radio]#BtnJaune:checked + label{ 
    background-image: none;
-   background-color:#CCCA34;
+   background-color:#EAD390;
    cursor:pointer;
     padding: 40px;
     margin-left:20px;  

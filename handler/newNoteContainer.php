@@ -46,12 +46,19 @@ class newNotesContainer {
                             </div>
                             <br>
                             <div align="center">
-                               
-                                <input type="radio" id="BtnJaune" name="radios" value="#CCCA34">
+                               <input type="radio" id="BtnBlanc" name="color" value="#FFFFFF" checked>
+                                <label for="BtnBlanc">Blanc</label>
+                                
+                                <input type="radio" id="BtnJaune" name="color" value="#EAD390">
                                 <label for="BtnJaune">Jaune</label>
-                                <input type="radio" id="BtnRose" name="radios" value="#CBA0CC">
+                                
+                                <input type="radio" id="BtnRouge" name="color" value="#EF6F64">
+                                <label for="BtnRouge">Rouge</label>
+                                
+                                <input type="radio" id="BtnRose" name="color" value="#C97EA6">
                                 <label for="BtnRose">Rose</label>
-                                <input type="radio" id="BtnBleu" name="radios" value="#A2DEFF">
+                                
+                                <input type="radio" id="BtnBleu" name="color" value="#7ACAD1">
                                 <label for="BtnBleu">Bleu</label> 
                              </div>
                             <p class="register" align="center">
