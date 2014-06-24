@@ -44,12 +44,16 @@ class newNotesContainer {
                             <div class="text" data-role="input-control">
                                 <input type="text" name="place" required="required" size="106" placeholder="Votre lieu ici">
                             </div>
-                            <div>
-                                <input type="button" class="BtnJaune" name="color" value="#CCCA34">
-                                <input type="button" class="BtnRose" name="color" value="#CBA0CC">
-                                <input type="button" class="BtnBleu" name="color" value="#A2DEFF">
-                                <input type="hidden" name="color" value=color.value>
-                            </div>
+                            <br>
+                            <div align="center">
+                               
+                                <input type="radio" id="BtnJaune" name="radios" value="#CCCA34">
+                                <label for="BtnJaune">Jaune</label>
+                                <input type="radio" id="BtnRose" name="radios" value="#CBA0CC">
+                                <label for="BtnRose">Rose</label>
+                                <input type="radio" id="BtnBleu" name="radios" value="#A2DEFF">
+                                <label for="BtnBleu">Bleu</label> 
+                             </div>
                             <p class="register" align="center">
                                 <input type="submit" value="Valider" align="right" >
                             </p> 

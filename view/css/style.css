@@ -226,66 +226,159 @@ input[type="submit"]:hover {
     border-radius: 3px;
     cursor: pointer;
 }
-input[type="button"].BtnBleu{
-    font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    text-align: center;
-    padding: 40px;
-    margin-left:20px;
-    font-size: 10px;
-    text-transform: uppercase;
-    background: #A2DEFF;
-    color: #FFF;
-    border: 2px solid;
-    transition: all 0.5s;
-}
 
-input[type="button"].BtnJaune{
-    font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    text-align: center;
-    padding: 40px;
-    margin-left:20px;
-    font-size: 10px;
-    text-transform: uppercase;
-    background: #CCCA34;
-    color: #FFF;
-    border: 2px solid ;
-    transition: all 0.5s;
-}
-
-input[type="button"].BtnRose{
-    font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    text-align: center;
-    padding: 40px;
-    margin-left:20px;
-    font-size: 10px;
-    text-transform: uppercase;
-    background: #CBA0CC;
-    color: #FFF;
-    border: 2px solid ; 
-    transition: all 0.5s;
-}
-
-input[type="button"].BtnBleu:hover{
-    cursor:pointer;
-
-}
-
-input[type="button"].BtnJaune:hover{
-    cursor:pointer;
-
-}
-
-input[type="button"].BtnRose:hover{
-    cursor:pointer;
-
-}
 
 textarea { 
     resize: none; 
+}
+
+/*
+  Hide radio button (the round disc)
+  we will use just the label to create pushbutton effect
+*/
+input[type=radio] {
+    display:none; 
+    margin:10px;
+}
+ 
+/*
+  Change the look'n'feel of labels (which are adjacent to radiobuttons).
+  Add some margin, padding to label
+*/
+input[type=radio] + label {
+    display:inline-block;
+    padding: 4px 12px;
+    background-color: #e7e7e7;
+    border-color: #ddd;
+    padding: 40px;
+    margin-left:20px;
+    cursor:pointer;
+    color:white;
+    transition: all 0.5s;
+ 
+}
+/*
+ Change background color for label next to checked radio button
+ to make it look like highlighted button
+*/
+input[type=radio]#BtnBleu + label{ 
+   background-image: none;
+   background-color:#7ACAD1;
+   cursor:pointer;
+    padding: 40px;
+    margin-left:20px;
+  
+}
+input[type=radio]#BtnRouge + label{ 
+   background-image: none;
+   background-color:#EF6F64;
+   cursor:pointer;
+    padding: 40px;
+    margin-left:20px;
+  
+}
+input[type=radio]#BtnRose + label{ 
+   background-image: none;
+   background-color:#C97EA6;
+   cursor:pointer;
+    padding: 40px;
+    margin-left:20px;
+ 
+}
+
+input[type=radio]#BtnJaune + label{ 
+   background-image: none;
+   
+   background-color:#EAD390;
+   cursor:pointer;
+    padding: 40px;
+    margin-left:20px;  
+}
+
+input[type=radio]#BtnBlanc + label{ 
+   background-image: none;
+   
+   background-color:#FFFFFF;
+   cursor:pointer;
+    padding: 40px;
+    margin-left:20px;  
+}
+
+
+input[type=radio]#BtnBleu:checked + label{ 
+   background-image: none;
+   background-color:#A2DEFF;
+   cursor:pointer;
+    padding: 40px;
+    margin-left:20px;
+
+    -moz-box-shadow: 3px 3px 3px 3px #1e7cc4;
+    -webkit-box-shadow: 3px 3px 3px 3px #1e7cc4;
+    -o-box-shadow: 3px 3px 3px 3px #1e7cc4;
+    box-shadow: 2px 2px 4px 4px #1e7cc4;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; 
+}
+
+input[type=radio]#BtnRouge:checked + label{ 
+   background-image: none;
+   background-color:#EF6F64;
+   cursor:pointer;
+    padding: 40px;
+    margin-left:20px;
+
+    -moz-box-shadow: 3px 3px 3px 3px #EA6F64;
+    -webkit-box-shadow: 3px 3px 3px 3px #EA6F64;
+    -o-box-shadow: 3px 3px 3px 3px #EA6F64;
+    box-shadow: 2px 2px 4px 4px #EA6F64;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; 
+}
+
+input[type=radio]#BtnRose:checked + label{ 
+   background-image: none;
+   background-color:#CBA0CC;
+   cursor:pointer;
+    padding: 40px;
+    margin-left:20px;
+    
+        -moz-box-shadow: 3px 3px 3px 3px #CBA0CC;
+    -webkit-box-shadow: 3px 3px 3px 3px #CBA0CC;
+    -o-box-shadow: 3px 3px 3px 3px #CBA0CC;
+    box-shadow: 2px 2px 4px 4px #CB80CC;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; 
+}
+
+input[type=radio]#BtnBleu:checked + label{ 
+   background-image: none;
+   background-color:#A2DEFF;
+   cursor:pointer;
+    padding: 40px;
+    margin-left:20px;
+
+    -moz-box-shadow: 3px 3px 3px 3px #1e7cc4;
+    -webkit-box-shadow: 3px 3px 3px 3px #1e7cc4;
+    -o-box-shadow: 3px 3px 3px 3px #1e7cc4;
+    box-shadow: 2px 2px 4px 4px #1e7cc4;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; 
+}
+input[type=radio]#BtnJaune:checked + label{ 
+   background-image: none;
+   background-color:#CCCA34;
+   cursor:pointer;
+    padding: 40px;
+    margin-left:20px;  
+    -moz-box-shadow: 3px 3px 3px 3px #CCCA34;
+    -webkit-box-shadow: 3px 3px 3px 3px #CCCA34;
+    -o-box-shadow: 3px 3px 3px 3px #CCCA34;
+    box-shadow: 2px 2px 4px 4px #CCAA34;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; 
 }
