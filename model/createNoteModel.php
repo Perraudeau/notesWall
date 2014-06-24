@@ -23,7 +23,10 @@ class createNoteModel {
         return $return;
     }
     
+    
+
     public static function insertNewBigNote($email,$title,$note,$date,$place,$color){
+ 
         $query = 'INSERT INTO note (id,idUser,title,text,creationDate,place,alarmDate,color) VALUES (NULL , ' . createNoteModel::getIdUser($email) . ',"'.$title.'","' . $note . '",CURRENT_TIMESTAMP,"'.$place.'","'.$date.'","'.$color.'")';
         echo $query;
         SPDO::getInstance()->exec($query);

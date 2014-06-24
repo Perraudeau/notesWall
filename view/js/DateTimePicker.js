@@ -18,14 +18,14 @@
 			mode: "date",
 			defaultDate: new Date(),
 		
-			dateSeparator: "-",
+			dateSeparator: "/",
 			timeSeparator: ":",
 			timeMeridiemSeparator: " ",
 			dateTimeSeparator: " ",
 		
-			dateTimeFormat: "dd-MM-yyyy HH:mm:ss",
-			dateFormat: "dd-MM-yyyy",
-			timeFormat: "HH:mm",
+			dateTimeFormat: "dd/MM/yyyy HH:mm:ss",
+			dateFormat: "dd/MM/yyyy",
+			timeFormat: "HH:mm:ss",
 		
 			maxDate: null,
 			minDate:  null,
