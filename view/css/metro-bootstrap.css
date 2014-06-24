@@ -8,6 +8,7 @@ html,
 body {
   padding: 0;
   background-image: url('../images/fonts.jpg');
+  background-color: #2B617F;
   background-position:top;
 background-attachment:scroll;
 background-repeat:no-repeat;

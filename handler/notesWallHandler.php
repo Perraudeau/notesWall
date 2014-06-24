@@ -61,9 +61,9 @@ class notesWall {
 
                 //barre pour permettre la creation d'une note rapide
                 public static function newNotesWallBar() {
-                    //action="../handler/newNotesWallBar.php"
+                   
                     ?>
-                    <form id="newNotesWallBar"  method="post">
+                    <form id="newNotesWallBar"  method="post"  action="../handler/newNotesWallBar.php">
                         <div id="validateNewNote"><input id= "noteRapide" placeholder="  Note rapide" type="text" name="note" /><input id="validateNewNoteButton" type="submit" value="Envoyer"></div>
                     </form>
                     <?php
