@@ -19,15 +19,15 @@ class newNotesContainer {
 
                             <div class="text" data-role="input-control">
 
-                                <input type="text" name="title" required="required" size="106" placeholder="Votre titre ici">
+                                <input type="text" name="title" required="required" size="100" placeholder="Votre titre ici">
 
                             </div>
 
                             <div class="text" data-role="input-control">
-                                <textarea  name="note" placeholder="Votre note ici" required="required" maxlength ="480" rows="7" cols="81" ></textarea>
+                                <textarea  name="note"  required="required" placeholder="Votre note ici" maxlength ="480" rows="7" cols="76" ></textarea>
                             </div>
                             <div>
-                                <input type="text" name ="date" size ="106" placeholder="date d'alarme" data-field="datetime" readonly>
+                                <input type="text" name ="date" size ="100" placeholder="Date d'alarme" data-field="datetime" readonly>
 
                                 <div id="dtBox"></div>
 
@@ -42,7 +42,7 @@ class newNotesContainer {
                             </div>
                        
                             <div class="text" data-role="input-control">
-                                <input type="text" name="place" required="required" size="106" placeholder="Votre lieu ici">
+                                <input type="text" name="place" required="required" size="100" placeholder="Votre lieu ici">
                             </div>
                             <br>
                             <div align="center">
