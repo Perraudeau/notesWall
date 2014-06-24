@@ -64,7 +64,7 @@ class notesWall {
                     //action="../handler/newNotesWallBar.php"
                     ?>
                     <form id="newNotesWallBar"  method="post">
-                        <div id="validateNewNote"><input id= "note" placeholder="  Note rapide" type="text" name="note" /><input id="validateNewNoteButton" type="submit" value="Envoyer"></div>
+                        <div id="validateNewNote"><input id= "noteRapide" placeholder="  Note rapide" type="text" name="note" /><input id="validateNewNoteButton" type="submit" value="Envoyer"></div>
                     </form>
                     <?php
                 }

@@ -48,7 +48,7 @@ class newNotesContainer {
                                 <input type="button" class="BtnJaune" name="color" value="#CCCA34">
                                 <input type="button" class="BtnRose" name="color" value="#CBA0CC">
                                 <input type="button" class="BtnBleu" name="color" value="#A2DEFF">
-                                <input type="hidden" name="color" value="#CCCA34">
+                                <input type="hidden" name="color" value=color.value>
                             </div>
                             <p class="register" align="center">
                                 <input type="submit" value="Valider" align="right" >
