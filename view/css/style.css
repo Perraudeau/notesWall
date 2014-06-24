@@ -217,10 +217,10 @@ input[type="submit"]:hover {
     transition:all 0.5s;
 }
 #note:hover{
-    -moz-box-shadow: 3px 3px 3px 3px #1e7cc4;
-    -webkit-box-shadow: 3px 3px 3px 3px #1e7cc4;
-    -o-box-shadow: 3px 3px 3px 3px #1e7cc4;
-    box-shadow: 2px 2px 4px 4px #1e7cc4;
+    -moz-box-shadow: 3px 3px 3px 3px gray;
+    -webkit-box-shadow: 3px 3px 3px 3px gray;
+    -o-box-shadow: 3px 3px 3px 3px gray;
+    box-shadow: 2px 2px 4px 4px gray;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
