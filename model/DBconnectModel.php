@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @author Perraudeau Victor  <perraudeau.victor@gmail.com>
+ * @author Perraudeau Victor
  */
 
 /**
