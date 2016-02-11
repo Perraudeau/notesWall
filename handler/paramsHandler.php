@@ -3,7 +3,7 @@
 include_once '../Model/paramsModel.php';
 session_start();
 /**
- * @author Perraudeau Victor  <perraudeau.victor@gmail.com>
+ * @author Perraudeau Victor
  */
 $_SESSION['errorParams'] ="";
 if (paramsModel::checkPassword($_POST['currentPassword'])==1) {
